@@ -53,7 +53,20 @@
 <script>
 const form = document.getElementById('studentform');
 const reposeEl = document.getElementById('response');
-  
+form.onsubmit = e =>{
+  e.preventDefault();
+fetch('')
+}
+    method: 'POST',
+    body: new URLSearchParamas(new FormData(form))
+  })
+  .then(() => {
+  responseEl.textContext ="ส่งข้อมูลสำเร็จ ขอบคุณ";
+  form.reset();
+  })
+  .catch(() => responseEl.textContent="เกิดข้อผิดพลาด ลองใหม่");
+  };
+    
 </script>
 </center>
   </body>
