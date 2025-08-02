@@ -38,6 +38,20 @@ header{background-color:yellow;
 <div class="content">
  Which of the following cloud formations is associated with heavy showers and storms? 
 <div class="choice">
-  <button onclick="checkAnswer(this,false)"A. Cirrus</button>
-  
+  <button onclick="checkAnswer(this,false)">A. Cirrus</button>
+  <button onclick="checkAnswer(this,false)">B. Stratus</button>
+  <button onclick="checkAnswer(this,true)">C. Cumulonimbus</button>
+  <button onclick="checkAnswer(this,false)">D. Contrail</button>
+  </div>
+  <br><br>
+
+</div>
+    <script>
+      function checkAnswer(btn,correct)
+        {btn.parentElement.querySelectorAll('button').forEach(b.disabled =true);
+         btn.classlist.add(correct? 'correct' : 'incorrect');}
+         
+    </script>
+
+  </body>
 </html>
