@@ -11,10 +11,37 @@
     
     header{background:linear-gradient(hotpink,skyblue,white);
            padding: 30px;
-           text-align:center:
+           text-align:center;
            border-radius: 10px;}
     mark{background: linear-gradient(MediumSeaGreen,yellow,pink,skyblue);
          color:brown;}
+    button1{background:linear-gradeint(hotpink,skyblue);
+            color:blue;}
+    button2{background:linear-gradeint(MediumSeaGreen,yellow);
+            color:blue;}
+    button3{background:linear-gradeint(BlueViolet,Gold);
+            color:blue;}
+    button4{background:linear-gradeint(red,white);
+            color:blue;}
+    section{background:linear-gradeint(hotpink,skyblue,white);
+            padding: 15px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;}
+    img:hover{animation: glowcolors 1.2s infinite alternate;}
+    
+    @keyframes glowcolors{
+      0% {box-shadow: 0 0 20px pink;}
+      25% {box-shadow: 0 0 20px skyblue;}
+      50% {box-shadow: 0 0 20px yellow;}
+      75% {box-shadow: 0 0 20px purple;}
+      100% {box-shadow: 0 0 20px red;}
+    }
+
+    .blink-bg{
+      animation: blinkbg 1s infinite alternate;
+      padding: 3px 6px
+      
   </style>
   </head>
   <body background="https://spacebar.th/api/media/file/Jaturamitr_Football_champions_info_SPACEBAR_Hero_588d17e6ee.jpg">
@@ -22,5 +49,16 @@
     <h1><marquee><mark>จตุรมิตรสามัคคี 4 โรงเรียน
     โรงเรียนสวนกุหลาบวิทยาลัย🩷🩵 โรงเรียนเทพศิรินทร์💚💛 โรงเรียนกรุงเทพคริสเตียนวิทยาลัย💜💛 โรงเรียนอัสสัมชัญ❤️🤍
     </h1></marquee></mark>
+    <br><br>
+    <button1 onclick="document.location='http://www.sk.ac.th/'"> โรงเรียนสวนกุหลาบวิทยาลัย🩷🩵 </button1>
+    <button2 onclick="document.location='https://www.debsirin.ac.th/'"> โรงเรียนเทพศิรินทร์💚💛 </button2>
+    <button3 onclick="document.location='https://www.bcc.ac.th/2019/'"> โรงเรียนกรุงเทพคริสเตียนวิทยาลัย💜💛 </button3>
+    <button4 onclick="document.location='https://www.assumption.ac.th/'"> โรงเรียนอัสสัมชัญ❤️🤍 </button4>
   </header>
+  <section>
+  <center>
+  <h1><mark>
+  </h1></mark>
+  </center>
+  </section>
 </html>
